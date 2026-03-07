@@ -115,9 +115,9 @@ void loop() {
     }
   }
 
-  if (showSlow && millis() - slowStart > slowDuration) {
+ if (showSlow && millis() - slowStart > slowDuration) {
     showSlow = false;
-    if (speedReceived && !isCautionActive) {
+    if (speedReceived) { // Now it shows Speed/ETA regardless of light color
         displayInfo();
     }
   }
