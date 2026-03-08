@@ -112,7 +112,6 @@ void loop() {
 
   if (!isClear && millis() - lastPacketTime > TIMEOUT_THRESHOLD) {
     isClear = true;
-    isCautionActive = false;
     speedReceived = false;
     drawCentered("GO AHEAD");
   }
